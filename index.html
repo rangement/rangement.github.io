@@ -40,7 +40,7 @@
 	html {
   		margin: 0;
   		background-color: #dbd5c5;
-  		/*overflow-x: hidden;*/
+  		overflow-x: hidden;
   		text-decoration: none;
   	}
 
@@ -60,10 +60,11 @@
 		text-decoration: none;
 	}
 
+
 	header{
 		width: 100vw;
 		position: fixed;
-		background-color: #dbd5c5;
+		background-color: none;
 		top: 0;
 		display: inline;
 		padding-top: 0.85em;
@@ -123,14 +124,19 @@ box-shadow: 0px 16px 10px -6px rgba(255,255,255,1);*/
 		font-family: /*Times,sans-serif;*/ 'Helvetica', Helvetica, Arial, sans-serif;
 		font-size: calc(33.5px + 0.2vw);
 		line-height: 43px;
+		z-index: 99999;
+	}
+
+	#about u{
+		text-decoration: none;
 	}
 
 
 	footer{
 		position: fixed;
-		background-color: #dbd5c5;
+		background-color: none;
 		padding-bottom: 0.25em;
-		padding-left: 0.25em;
+		padding-left: 0.45em;
 		padding-top: 0.5;
 		z-index: 100;	
 	}
@@ -147,7 +153,7 @@ box-shadow: 0px 16px 10px -6px rgba(255,255,255,1);*/
 		float: right;
 		position: relative;
 		display: inline;
-		z-index: 9999999;
+		z-index: 1;
 		cursor: pointer;
 	}
 /*
@@ -182,7 +188,7 @@ box-shadow: 0px 16px 10px -6px rgba(255,255,255,1);*/
 	}
 
 	img{
-		height:550px;
+		height:500px;
 		width:auto;
 		align-items: center;
 		justify-content: center;
@@ -216,6 +222,7 @@ box-shadow: 0px 16px 10px -6px rgba(255,255,255,1);*/
 		font-family: 'Helvetica', Helvetica, Arial, sans-serif;
 		text-decoration: none;
 		font-size: calc(17pt + 0.2vw);
+		z-index: 99999;
 	}
 
 	header{
@@ -338,7 +345,7 @@ box-shadow: 0px 16px 10px -6px rgba(255,255,255,1);*/
 
 			<div><a class="name"> Theia Flynn </a><a class="about">/ ... </a>
 				<div id="about">
-				<a>23F / BK, NY / RISD GD&lsquo;19 / <a><br> <u>theia.flynn@gmail.com</u> / </a><a href="https://www.are.na/theia-flynn/greetings-ykpl2ygiucq"><u> are.na</u></a>.
+				<a>23F / BK, NY / RISD GD&lsquo;19 / <a><br> <u>theia.flynn@gmail.com</u> / </a><a href="https://www.are.na/theia-flynn/channels?sort=UPDATED_AT"><u> are.na</u></a>.
 				<svg id="exit" height="36px" width="36px" style="opacity: 0; margin-left: 1.25em; padding-right: 5px; padding-top: 10px; position: absolute; bottom: 4.5em; left: 0px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 29.7"><defs><style>.cls-1{fill:#f5fff9;;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="33 0 27 0 16.5 11.55 6 0 0 0 13.5 14.85 0 29.7 6 29.7 16.5 18.15 27 29.7 33 29.7 19.5 14.85 33 0"/></g></g></svg></svg>
 				</div>
 			</div>
@@ -409,7 +416,7 @@ box-shadow: 0px 16px 10px -6px rgba(255,255,255,1);*/
 
     	// position tooltip relative to mouse coordinates
     	$(this).mousemove(function() {
-     	 $('#tooltip').css({'top':mouseY - 100,'left':mouseX - 100});   
+     	 $('#tooltip').css({'top':mouseY - 100,'left':mouseX - 200});   
     	}); 
 	}).mouseout(function() {
   		// hide tooltip
