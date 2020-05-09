@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>theiaflynn</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/cowhite.ico" type="image/x-icon">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+	
+	<style type="text/css">
+
+	@font-face {
+  		font-family: 'Helvetica';
+  		src: url(assets/HelveticaLTStd-Roman.otf);
+	}
+
+	@font-face {
+  		font-family: 'Helvetica-Italic';
+  		src: url(assets/HelveticaLTStd-Obl.otf);
+	}
+
+*, *:before, *:after {
+  	-moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+  	box-sizing: border-box; 
+  	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+  	}
+
+/**:active { 
+  	cursor: url("assets/whitecircle.png"), auto;
+  	}*/
+
+
+	html {
+  		margin: 0;
+  		background-color: #dbd5c5;
+  		/*overflow-x: hidden;*/
+  		text-decoration: none;
+  	}
+
+  	body{
+  	}
+
+    html a {
+  		color: #f5fff9;
+		font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+		text-decoration: none;
+		font-size: calc(30px + 0.2vw);
+	}
+
+	a, a:link, a:visted, a:active {
+		color: 	black;
+		font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+		text-decoration: none;
+	}
+
+	header{
+		width: 100vw;
+		position: fixed;
+		background-color: #dbd5c5;
+		top: 0;
+		display: inline;
+		padding-top: 0.85em;
+		padding-left: 0.75em;
+/*		-webkit-box-shadow: 0px 16px 10px -6px rgba(255,255,255,1);
+-moz-box-shadow: 0px 16px 10px -6px rgba(255,255,255,1);
+box-shadow: 0px 16px 10px -6px rgba(255,255,255,1);*/
+	}
+
+	header #lang {
+		right:1.5em;
+		top: 0.25em;
+		float: right;
+		position: absolute;
+		display: inline;
+		text-transform: capitalize;
+	}
+
+	header #lang-2 {
+		right:1.5em;
+		top: 0.25em;
+		float: right;
+		position: absolute;
+		display: none;
+		text-transform: capitalize;
+	}
+
+/*	header #about {
+		position: sticky;
+		top:0px;
+		display: inline-block;
+	}*/
+
+	.about.active{
+		opacity: 0;
+		z-index: 100;	
+	}
+
+
+	#about {
+		display: none;
+		background-color: none;
+		height: 100vh;
+		width: 99vw;
+		margin: 0;
+		top: 0px;
+		left: 0px;
+		z-index: 99999;
+		padding-top: calc(0.25em + 0.2vw);
+		padding-left: calc(0.15em + 0.2vw);
+		padding-right: calc(4vw + 0.2vw);
+		z-index: 100;	
+	}
+
+
+	#about a{
+		font-family: /*Times,sans-serif;*/ 'Helvetica', Helvetica, Arial, sans-serif;
+		font-size: calc(33.5px + 0.2vw);
+		line-height: 43px;
+	}
+
+
+	footer{
+		position: fixed;
+		background-color: #dbd5c5;
+		padding-bottom: 0.25em;
+		padding-left: 0.25em;
+		padding-top: 0.5;
+		z-index: 100;	
+	}
+
+	footer, footer a, #para1 a{
+		font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+		bottom: 0em;
+		padding-left: 0.25em;
+	}
+
+
+	footer #contact {
+		right:1.25em;
+		float: right;
+		position: relative;
+		display: inline;
+		z-index: 9999999;
+		cursor: pointer;
+	}
+/*
+	img {
+  		width: 100%;
+  		height: auto; }*/
+
+
+/* Most important right here ___________________________________________*/
+
+	main {		
+		min-height: 100vh;
+	}	
+
+
+	body{
+		margin-left: 0;
+	}
+
+
+	.container{
+		background-color: #dbd5c5;
+		margin-top: calc(3.75em + 0.2vw);
+		margin-bottom: calc(2.85em + 0.2vw);
+	}
+
+
+	.hover{
+		display: block;
+		/*padding-bottom: calc(0.25em + 0.2vw);*/
+
+	}
+
+	img{
+		height:550px;
+		width:auto;
+		align-items: center;
+		justify-content: center;
+		/*pointer-events: none;*/
+		z-index: 0;	
+		margin:auto;
+	}
+
+
+#tooltip
+{
+  /*width: 200px;*/
+  position: absolute;
+  display:none;
+  background-color: #f5fff9;
+  text-align: center;
+  color: black;
+  font-size: calc(18px + 0.2vw);
+  font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+}
+
+
+/* Mobile size: ___________________________________________*/
+
+
+@media screen and (max-width: 470px) {
+
+
+	html a {
+  		color: #f5fff9;
+		font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+		text-decoration: none;
+		font-size: calc(17pt + 0.2vw);
+	}
+
+	header{
+		width: 100%;
+		left: 0px;
+		padding-bottom: calc(0.25em + 0.2vw);
+	}
+	
+
+	.container{
+		background-color: #dbd5c5;
+		margin-top: calc(5.75em + 0.2vw);
+		margin-bottom: calc(0.85em + 0.2vw);
+	}
+
+
+	#about {
+		display: none;
+		background-color: #dbd5c5;
+		height: 100vh;
+		width: 99vw;
+		margin: 0;
+		top: 0px;
+		left: 0px;
+		z-index: 9999;
+		padding-top: calc(0.25em + 0.2vw);
+		padding-right: calc(2em + 0.2vw);
+	}
+
+	#about a{
+		font-family: /*Times,sans-serif;*/ 'Helvetica', Helvetica, Arial, sans-serif;
+		font-size: calc(17pt + 0.2vw);
+		line-height: 30px;
+	}
+
+
+	header #lang, header #lang-2 {
+		padding-top: calc(0.15em + 0.2vw);
+		right: calc(0.75em + 0.2vw);
+	}
+
+
+	#lang #arrow, #lang-2 #arrow{
+		height:21pt;
+		width:21pt;
+	}
+
+	header .about{
+		display: block;
+	}
+
+	.about.active{
+		opacity: 100;
+	}
+
+
+	footer{
+		padding-bottom: calc(2em + 0.2vw);	
+	}
+
+
+}
+
+
+
+/* Mobile size TINY 320: ___________________________________________*/
+
+
+@media screen and (max-width: 320px) {
+
+
+	html a {
+  		color: #f5fff9;
+		font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+		text-decoration: none;
+		font-size: calc(17pt + 0.2vw);
+	}
+
+#about a{
+		font-family: /*Times,sans-serif;*/ 'Helvetica', Helvetica, Arial, sans-serif;
+		font-size: calc(17pt + 0.2vw);
+		line-height: 23px;
+	}	
+
+}
+
+	</style>
+
+	<script type="text/javascript">
+
+	window.onload = function randomMargin(){
+    $('.hover').each(function(){
+    randomizeObject(this);
+    });
+	}
+
+	function randomizeObject(elem){
+    var randomnumber=Math.floor(Math.random()*800) - 50;
+    $(elem).css({"margin-left": randomnumber+"px"});
+	}
+
+
+	</script>
+
+
+
+</head>
+
+	<header>
+			
+			<div id="lang">
+				<svg id="arrow" height="36px" width="36px" style="padding-right: 5px; padding-top: 10px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.3 30"><defs><style>.cls-1{fill:#f5fff9;;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="22.01 21.68 22.01 0 18.3 0 18.3 21.68 0 0.3 0 6.46 20.15 30 40.3 6.46 40.3 0.3 22.01 21.68"/></g></g></svg></svg><a>Bottom </a>
+			</div>
+
+
+			<div id="lang-2">
+				<svg id="arrow" height="36px" width="36px" style="padding-right: 3px; padding-top: 10px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.3 30"><defs><style>.cls-1{fill:#f5fff9;;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Layer_1-2-2" data-name="Layer 1-2"><polygon class="cls-1" points="18.29 8.32 18.29 30 22 30 22 8.32 40.3 29.7 40.3 23.54 20.15 0 0 23.54 0 29.7 18.29 8.32"/></g></g></g></svg></svg><a>Top </a>
+			</div>
+
+
+			<div><a class="name"> Theia Flynn </a><a class="about">/ ... </a>
+				<div id="about">
+				<a>23F / BK, NY / RISD GD&lsquo;19 / <a><br> <u>theia.flynn@gmail.com</u> / </a><a href="https://www.are.na/theia-flynn/greetings-ykpl2ygiucq"><u> are.na</u></a>.
+				<svg id="exit" height="36px" width="36px" style="opacity: 0; margin-left: 1.25em; padding-right: 5px; padding-top: 10px; position: absolute; bottom: 4.5em; left: 0px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 29.7"><defs><style>.cls-1{fill:#f5fff9;;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="33 0 27 0 16.5 11.55 6 0 0 0 13.5 14.85 0 29.7 6 29.7 16.5 18.15 27 29.7 33 29.7 19.5 14.85 33 0"/></g></g></svg></svg>
+				</div>
+			</div>
+
+	</header>
+
+<body>
+
+	<main>
+
+		<div class="container">
+
+
+				<div class="hover bar1"><img src="assets/imgs/file-026.png"></div>
+				<div class="hover bar2"><img src="assets/imgs/file-013.png"></div>
+				<div class="hover bar3"><img src="assets/imgs/file-021.png"></div>
+				<div class="hover bar4"><img src="assets/imgs/file-03.png"></div>
+				<div class="hover bar5"><img src="assets/imgs/file-08.png"></div>
+				<div class="hover bar6"><img src="assets/imgs/file-023.png"></div>
+				<div class="hover bar7"><img src="assets/imgs/file-010.png"></div>
+				<div class="hover bar8"><img src="assets/imgs/file-014.png"></div>
+				<div class="hover bar9"><img src="assets/imgs/file-017.png"></div>
+				<div class="hover bar10"><img src="assets/imgs/file-016.png"></div>
+				<div class="hover bar11"><img src="assets/imgs/file-00.png"></div>
+				<div class="hover bar12"><img src="assets/imgs/file-020.png"></div>
+				<div class="hover bar13"><img src="assets/imgs/file-024.png"></div>
+				<div id="tooltip"><span> </span></div>
+
+													
+		
+		</div>
+		
+
+	</main>
+
+
+	  <footer>
+	  	<div><a id="para1"></a></div>
+	  	<!-- <div id="contact" href = "mailto: theia.flynn@gmail.com"><a>Contact </a></div> -->
+	  </footer>
+
+
+<script type="text/javascript">
+
+	// MEDIA DESKTOP ______________________________________________
+
+	if (screen.width >= 470) {   // MEDIA SIZE DESKTOP
+
+  	// Signals that this is script for DESKTOP media size:
+  	console.log("DESKTOP");
+
+
+  	var mouseX;
+    var mouseY;
+    $(document).mousemove( function(e) {
+    // mouse coordinates
+    mouseX = e.pageX; 
+    mouseY = e.pageY;
+    });  
+
+	// hover
+	$(".hover").mouseover(function(){
+    	// populate tooltip string
+    	$('#tooltip span').html(stringValue($(this)));
+    
+    	// show tooltip
+    	$('#tooltip').stop(false, true).fadeIn(1);
+
+    	// position tooltip relative to mouse coordinates
+    	$(this).mousemove(function() {
+     	 $('#tooltip').css({'top':mouseY - 100,'left':mouseX - 100});   
+    	}); 
+	}).mouseout(function() {
+  		// hide tooltip
+ 		 $('#tooltip').stop(false, true).fadeOut('slow');
+	});
+
+	// perform check and return string
+	function stringValue(e) {
+
+  		if (e.hasClass('bar1')) {
+    	return 'May 2019 / Degree Project - Web Glossary';
+  		}
+  		else if (e.hasClass('bar2')) {
+    	return 'December 2018 / Typeface Specimen / Incline';
+  		}
+  		else if (e.hasClass('bar3')) {
+  		return 'March 2019 / Photography project';
+  		}
+  		else if (e.hasClass('bar4')) {
+  		return 'April 2019 / GUI';
+  		}
+  		else if (e.hasClass('bar5')) {
+  		return 'March 2018 / Collaboration with Raina Wellman and Eliza Chen / Draft Catalog';
+  		}
+  		else if (e.hasClass('bar6')) {
+  		return 'September 2017 / Modular Cursive Stencil';
+  		}
+  		else if (e.hasClass('bar7')) {
+  		return 'March 2019 / Found photo anthology / Flashback';
+  		}
+  		else if (e.hasClass('bar8')) {
+  		return 'May 2019 / Degree Project / Manifesto';
+  		}
+  		else if (e.hasClass('bar9')) {
+  		return 'May 2019 / Janky Mess';
+  		}
+  		else if (e.hasClass('bar10')) {
+  		return 'May 2019 / Le Parc des Perroquets';
+  		}
+  		else if (e.hasClass('bar11')) {
+  		return 'May 2017 / Collaboration with Tiger Dingsun / Argentina - Hi/Low Tech';
+  		}
+  		else if (e.hasClass('bar12')) {
+  		return 'May 2018 / Browser game';
+  		}
+  		else if (e.hasClass('bar13')) {
+  		return 'April 2017 / Collaboration with Aedan Vadala Clark / Back/Forth';
+  		}
+  		
+	
+	}
+
+	}
+
+
+	// MEDIA SCREEN MOBILE ______________________________________________
+
+
+
+	else if (screen.width <= 470) {   // MEDIA SIZE MOBILE
+
+  	// !Section-2 does NOT open upon item click!
+  	$('header .about').replaceWith("<a class='about'>About <a>");
+  	$('header, container a').css('z-index','100'); 
+  	// $( '.item-image' ).after($( ".item"+ '+d.getDate()+' ));
+
+  	// Signals that this is script for Mobile media size:
+  	console.log("MOBILE");
+
+	}
+
+</script>
+
+<!-- external script loaded last-->
+<script src="script-bottom.js"></script>
+
+</body>
+
+</html>
