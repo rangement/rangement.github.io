@@ -12,6 +12,8 @@
 
 	<script type="text/javascript">
 
+    if (screen.width >= 470) { 
+
 	window.onload = function randomMargin(){
     $('.hover').each(function(){
     randomizeObject(this);
@@ -23,6 +25,7 @@
     $(elem).css({"margin-left": randomnumber+"px"});
 	}
 
+	}
 
 	</script>
 
@@ -198,6 +201,22 @@
   	$('header .about').replaceWith("<a class='about'>About <a>");
   	$('header, container a').css('z-index','100'); 
   	// $( '.item-image' ).after($( ".item"+ '+d.getDate()+' ));
+
+
+  	// hover --> click
+	$(".hover").onClick(function(){
+    	// populate tooltip string
+    	$('#tooltip span').html(stringValue($(this)));
+    	// show tooltip
+    	$('#tooltip').stop(false, true).fadeIn(1);
+    	// position tooltip relative to mouse coordinates
+    	$(this).mousemove(function() {
+     	 $('#tooltip').css({'top':mouseY - 1,'left':mouseX - 1});   
+    	}); 
+	}).mouseout(function() {
+  		// hide tooltip
+ 		 $('#tooltip').stop(false, true).fadeOut('slow');
+	});
 
   	// Signals that this is script for Mobile media size:
   	console.log("MOBILE");
