@@ -1,6 +1,7 @@
 // SCRIPTS PLACED AT BOTTOM OF HTML INSIDE BODY. 
 
 
+
   // Dates the page upon load (displayed in 'footer #para1'):
   document.getElementById("para1").innerHTML = formatAMPM();
 
@@ -31,16 +32,15 @@
 
 
 
-if (screen.width >= 470) {   // MEDIA SIZE MOBILE
+
+
+if (screen.width >= 470) {   // MEDIA SIZE desktop
 
 
 // Launch both functions:
   window.onscroll = function() {scrollFunction()};
 
 }
-
-
-  
 
 
   // Scroll to bottom onclick of "Bottom":

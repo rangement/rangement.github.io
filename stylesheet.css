@@ -23,7 +23,7 @@
 
 /**:active { 
   	cursor: url("assets/whitecircle.png"), auto;
-  	}*/
+}*/
 
 
 	html {
@@ -31,9 +31,6 @@
   		background-color: #dbd5c5;
   		overflow-x: hidden;
   		text-decoration: none;
-  	}
-
-  	body{
   	}
 
     html a {
@@ -51,7 +48,7 @@
 
 
 	header{
-		width: 100vw;
+		width: 100%;
 		position: fixed;
 		background-color: none;
 		top: 0;
@@ -68,7 +65,6 @@ box-shadow: 0px 16px 10px -6px rgba(255,255,255,1);*/
 		top: 0.25em;
 		float: right;
 		position: absolute;
-		display: inline;
 		text-transform: capitalize;
 	}
 
@@ -155,7 +151,9 @@ box-shadow: 0px 16px 10px -6px rgba(255,255,255,1);*/
 /* Most important right here ___________________________________________*/
 
 	main {		
-		min-height: 100vh;
+		min-height: 100%;
+		width: 100vw;
+		margin: 5px;
 	}	
 
 
@@ -166,6 +164,9 @@ box-shadow: 0px 16px 10px -6px rgba(255,255,255,1);*/
 
 	.container{
 		background-color: #dbd5c5;
+		width: 95vw;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
 		margin-top: calc(3.75em + 0.2vw);
 		margin-bottom: calc(3.85em + 0.2vw);
 	}
@@ -199,6 +200,21 @@ box-shadow: 0px 16px 10px -6px rgba(255,255,255,1);*/
   font-size: calc(18px + 0.2vw);
   font-family: 'Helvetica', Helvetica, Arial, sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Mobile size: ___________________________________________*/
