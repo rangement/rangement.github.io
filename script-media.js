@@ -79,16 +79,10 @@
   		else if (e.hasClass('bar28')) {
   		return 'May 2019 / Typeface Specimen / Rhyta Grotesk';
   		}
-  		else if (e.hasClass('bar29')) {
-  		return 'May 2019 / Typeface Specimen / Rhyta Grotesk';
-  		}
   		else if (e.hasClass('bar33')) {
   		return 'May 2019 / Degree Project / A website';
   		}
       else if (e.hasClass('bar34')) {
-      return 'July 2020 / jwenzhuang.github.io / Wen’s website';
-      }
-      else if (e.hasClass('bar35')) {
       return 'July 2020 / jwenzhuang.github.io / Wen’s website';
       }
   	

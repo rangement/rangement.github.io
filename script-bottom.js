@@ -1,7 +1,5 @@
 // SCRIPTS PLACED AT BOTTOM OF HTML INSIDE BODY. 
 
-
-
   // Dates the page upon load (displayed in 'footer #para1'):
   document.getElementById("para1").innerHTML = formatAMPM();
 
@@ -78,10 +76,6 @@ if (screen.width >= 470) {   // MEDIA SIZE desktop
       $("html, body").css.animate({scrollTop: 0}, 500);
     });
   });
- 
-
-
-
 
 
 

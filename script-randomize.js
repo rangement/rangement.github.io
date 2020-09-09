@@ -1,5 +1,6 @@
 if (screen.width >= 470) { 
 
+
     //attributes each "hover" element inside the container div its own margins
 	window.onload = function randomMargin(){
     $('.hover').each(function(){
