@@ -80,10 +80,13 @@
   		return 'May 2019 / Typeface Specimen / Rhyta Grotesk';
   		}
   		else if (e.hasClass('bar33')) {
-  		return 'May 2019 / Degree Project / A website';
+  		return 'May 2019 / Degree Project / A website ';
   		}
       else if (e.hasClass('bar34')) {
       return 'July 2020 / jwenzhuang.github.io / Wen’s website';
+      }
+      else if (e.hasClass('bar311')) {
+      return 'July 2020 / drawn';
       }
   	
 	
@@ -98,28 +101,38 @@
 
 	else if (screen.width <= 470) {   // MEDIA SIZE MOBILE
 
-  	// !Section-2 does NOT open upon item click!
-  	$('header .about').replaceWith("<a class='about'>About <a>");
-  	$('header, container a').css('z-index','100'); 
-  	// $( '.item-image' ).after($( ".item"+ '+d.getDate()+' ));
+  $("main").hide();
+  $(".about").hide();
+  $("#lang").hide();
+  $("#lang2").hide();
+
+  $(".name").prepend( "<br>" );
+  $(".name").append( " Mobile Site under Construction / See you soon" );
+  $("header").css("padding-left","10vw");
+  $("header").css("padding-right","10vw");
+
+ //  	// !Section-2 does NOT open upon item click!
+ //  	$('header .about').replaceWith("<a class='about'>About <a>");
+ //  	$('header, container a').css('z-index','100'); 
+ //  	// $( '.item-image' ).after($( ".item"+ '+d.getDate()+' ));
 
 
-  	// hover --> click
-	$(".hover").onClick(function(){
-    	// populate tooltip string
-    	$('#tooltip span').html(stringValue($(this)));
-    	// show tooltip
-    	$('#tooltip').stop(false, true).fadeIn(1);
-    	// position tooltip relative to mouse coordinates
-    	$(this).mousemove(function() {
-     	 $('#tooltip').css({'top':mouseY - 1,'left':mouseX - 1});   
-    	}); 
-	}).mouseout(function() {
-  		// hide tooltip
- 		 $('#tooltip').stop(false, true).fadeOut('slow');
-	});
+ //  	// hover --> click
+	// $(".hover").onClick(function(){
+ //    	// populate tooltip string
+ //    	$('#tooltip span').html(stringValue($(this)));
+ //    	// show tooltip
+ //    	$('#tooltip').stop(false, true).fadeIn(1);
+ //    	// position tooltip relative to mouse coordinates
+ //    	$(this).mousemove(function() {
+ //     	 $('#tooltip').css({'top':mouseY - 1,'left':mouseX - 1});   
+ //    	}); 
+	// }).mouseout(function() {
+ //  		// hide tooltip
+ // 		 $('#tooltip').stop(false, true).fadeOut('slow');
+	// });
 
   	// Signals that this is script for Mobile media size:
   	console.log("MOBILE");
 
-	}
+}

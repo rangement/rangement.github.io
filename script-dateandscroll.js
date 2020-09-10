@@ -17,7 +17,29 @@
       
 
 
-  // When the user scrolls down 100px from the top of the document, show the button:
+
+
+// TOP/BOTTOM button
+
+  // Scroll to bottom onclick of "Bottom":
+  $(function () {
+    $('#lang').click(function () {
+      $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+      $("#lang-2").css('display','inline');
+      $("#lang").css('display','none');
+      })
+  })
+
+  // Scroll to top onclick of "Top":
+  $(function () {
+    $('#lang-2').click(function () {
+      $("html, body").animate({scrollTop: 0}, 500);
+      $("#lang").css('display','inline');
+      $("#lang-2").css('display','none');
+      })
+  })
+
+  // When the user scrolls down 100px from the top of the document, switch the button:
   function scrollFunction() {
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 20) {
         document.getElementById("lang-2").style.display = "inline";
@@ -28,35 +50,9 @@
       }
   }
 
-
-
-
-
-if (screen.width >= 470) {   // MEDIA SIZE desktop
-
-
-// Launch both functions:
   window.onscroll = function() {scrollFunction()};
 
-}
 
-
-  // Scroll to bottom onclick of "Bottom":
-  $(function () {
-    $('#lang').click(function () {
-      $("html, body").animate({ scrollTop: $(document).height() }, 1000);
-      $("#lang-2").css('display','inline');
-      $("#lang").css('display','none');
-      })
-  })
-  // Scroll to top onclick of "Top":
-  $(function () {
-    $('#lang-2').click(function () {
-      $("html, body").animate({scrollTop: 0}, 500);
-      $("#lang").css('display','inline');
-      $("#lang-2").css('display','none');
-      })
-  })
 
 
 
