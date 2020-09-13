@@ -198,12 +198,6 @@ src: url(data/NHaasGroteskDSPro-55Rg.ttf);
  line-height: 30px;
 }
 
-.linked{
- display: none;
- padding-top: 20px; 
-}
-
-
 #tooltip{
   /*width: 200px;*/
   z-index: 10000;

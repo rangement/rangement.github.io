@@ -8,12 +8,11 @@
 		let specific = $(this).clone();
 		    $(".caption").find("p").append().html(specific.attr("content"));
 		    $(".caption").find(".largerpicture").append().html(specific.removeAttr("width"));
-		    $(".linked").appendTo(".caption");
 		// scrolls to top:
 		    $("html, body").animate({scrollTop: 0}, 500);
 		// slides open the caption:
-			$(".linked").slideDown();
-		    $(".caption").slideDown();	
+		    $(".caption").slideDown();
+		
 	});
 
 
@@ -25,6 +24,5 @@
 	if($('.caption:visible').length == 0){
 		$( ".caption" ).click(function() {
 				$(".caption").slideUp();
-				$(".linked").slideUp();
 			}); 
 	}
