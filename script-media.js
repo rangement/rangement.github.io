@@ -98,7 +98,6 @@
 // MEDIA SCREEN MOBILE ______________________________________________
 
 
-
 	else if (screen.width <= 470) {   // MEDIA SIZE MOBILE
 
   $("main").hide();
@@ -110,27 +109,6 @@
   $(".name").append( " Mobile Site under Construction / See you soon" );
   $("header").css("padding-left","10vw");
   $("header").css("padding-right","10vw");
-
- //  	// !Section-2 does NOT open upon item click!
- //  	$('header .about').replaceWith("<a class='about'>About <a>");
- //  	$('header, container a').css('z-index','100'); 
- //  	// $( '.item-image' ).after($( ".item"+ '+d.getDate()+' ));
-
-
- //  	// hover --> click
-	// $(".hover").onClick(function(){
- //    	// populate tooltip string
- //    	$('#tooltip span').html(stringValue($(this)));
- //    	// show tooltip
- //    	$('#tooltip').stop(false, true).fadeIn(1);
- //    	// position tooltip relative to mouse coordinates
- //    	$(this).mousemove(function() {
- //     	 $('#tooltip').css({'top':mouseY - 1,'left':mouseX - 1});   
- //    	}); 
-	// }).mouseout(function() {
- //  		// hide tooltip
- // 		 $('#tooltip').stop(false, true).fadeOut('slow');
-	// });
 
   	// Signals that this is script for Mobile media size:
   	console.log("MOBILE");

@@ -22,7 +22,8 @@
 				<svg id="arrow" height="31px" width="31px" style="padding-right: 3px; padding-top: 11px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.3 30"><defs><style>.cls-1{fill:#f5fff9;;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Layer_1-2-2" data-name="Layer 1-2"><polygon class="cls-1" points="18.29 8.32 18.29 30 22 30 22 8.32 40.3 29.7 40.3 23.54 20.15 0 0 23.54 0 29.7 18.29 8.32"/></g></g></g></svg></svg><a>Top </a>
 			</div>
 
-			<div><a class="name">Theia Flynn /</a><a class="about" style="margin-left:-5px;"> … </a>
+			<div class="more">
+				<a class="name">Theia Flynn /</a><a class="about" style="margin-left:-5px;"> … </a>
 				<div id="about">
 				<a>23F / Paris, France / RISD GD ’19 / <a><br> <u>theia.flynn@gmail.com</u> / </a><a href="https://www.are.na/theia-flynn/channels?sort=UPDATED_AT"><u style="margin-left:-6px;"> are.na</u></a>.
 				</div>
@@ -61,7 +62,7 @@
 
 					<div class="hoverline" ></div>
 					<div class="hover bar3">
-						<img  content="Photographs taken in the context of Newly Formed, a studio taught by Kathleen and Christopher Sleboda."src="assets/imgs/file-033.png"></div>
+						<img  content="Photographs taken in the context of Newly Formed, a studio taught by Kathleen and Christopher Sleboda." src="assets/imgs/file-033.png"></div>
 
 					<div class="hoverline" ></div>				
 					<div class="hover bar4">
@@ -73,7 +74,9 @@
 
 	                <div class="hoverline" ></div>				
 	                <div class="hover bar34">
-	                	<img content="A website for Wen, visible here: <u>jwenzhuang.github.io</u>" src="assets/imgs/file-040.png"></div>
+	                	<img content="A website for Wen, visible here: <u>jwenzhuang.github.io</u>" src="assets/imgs/file-040.png">
+	                	<div class="linked"><a class="linked" href="https://jwenzhuang.github.io/">jwenzhuang.github.io</a></div>
+	                </div>
 
 	                <div class="hoverline" ></div>                
 					<div class="hover bar28">
@@ -147,45 +150,8 @@
 		  </footer>
 
 
-	<!-- Internal script inside body -->
-	<script type="text/javascript">
-
-
-
-//Upon img click = CLONES AND ENLARGES IMG + its CONTENT into .CAPTION and .LARGERPICTURE: 
-
-	$( "img" ).click(function() {
-		
-	// removes Tooltip temporarily:
-		$('#tooltip').stop(false, true).fadeOut(); 
-		
-		let specific = $(this).clone();
-		    $(".caption").find("p").append().html(specific.attr("content"));
-		    $(".caption").find(".largerpicture").append().html(specific.removeAttr("width"));
-		// scrolls to top:
-		    $("html, body").animate({scrollTop: 0}, 500);
-		// slides open the caption:
-		    $(".caption").slideDown();
-		
-	});
-
-
-// If CAPTION is OPEN and clicked, it will SLIDE CLOSED again
-
-	hiddenElements = $(':hidden');
-	visibleElements = $(':visible');
-
-	if($('.caption:visible').length == 0){
-		$( ".caption" ).click(function() {
-				$(".caption").slideUp();
-			}); 
-	}
-
-
-	</script>
-
-
-	<!-- external script loaded last -->
+	<!-- external scripts-->
+	<script src="script-caption.js"></script>
 	<script src="script-media.js"></script>
 	<script src="script-dateandscroll.js"></script>
 

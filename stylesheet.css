@@ -1,20 +1,19 @@
 @font-face {
-  		font-family: 'Haas';
-  		src: url(assets/HaaReg.otf);
-	}
+font-family: Haas;
+src: url(data/NHaasGroteskDSPro-55Rg.ttf);
+}
 
 *, *:before, *:after {
-	letter-spacing: 1.15px;
   	-moz-box-sizing: border-box;
   	-webkit-box-sizing: border-box;
   	box-sizing: border-box; 
   	-webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome and Opera */
   	}
 
 
@@ -23,15 +22,13 @@
   		background-color: #dbd5c5;
   		overflow-x: hidden;
   		text-decoration: none;
-  		v
   	}
 
     html a {
   		color: #f5fff9;
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
 		text-decoration: none;
-		font-size: calc(25px + 0.2vw);
-		letter-spacing: 1.15px;
+		font-size: calc(24px + 0.2vw);
 	}
 
 	a, a:link, a:visted, a:active {
@@ -40,29 +37,27 @@
 		text-decoration: none;
 	}
 
-
 	header{
 		width: 100%;
 		position: fixed;
 		top:0;
 		display: inline;
-		padding-top: 0.85em;
+		padding-top: 0.25em;
 		padding-left: 0.75em;
 		z-index: 99999;
-/*		-webkit-box-shadow: 0px 16px 10px -6px #dbd5c5;
-		-moz-box-shadow: 0px 16px 10px -6px #dbd5c5;
-		box-shadow: 0px 16px 10px -6px #dbd5c5;*/
 	}
 
-	header .name{
-		position: static;
-		padding-left: 0.25em;
+	header .more{
+		padding-top: 0.5em;
+		position: relative;
 	}
 
+	header .more .name{
+	padding-left: 0.25em;
+	}
 
 	header #lang {
 		right:1em;
-		top: 0.45em;
 		float: right;
 		position: absolute;
 		text-transform: capitalize;
@@ -70,7 +65,6 @@
 
 	header #lang-2 {
 		right:1em;
-		top: 0.45em;
 		float: right;
 		position: absolute;
 		display: none;
@@ -96,8 +90,8 @@
 
 
 	#about a{
-		font-family: /*Times,sans-serif;*/ 'Haas', Helvetica, Arial, sans-serif;
-		font-size: calc(25px + 0.2vw);
+		font-family: 'Haas', Helvetica, Arial, sans-serif;
+		font-size: calc(24px + 0.2vw);
 		line-height: 32px;
 	}
 
@@ -131,10 +125,6 @@
 		z-index: 1;
 		cursor: pointer;
 	}
-/*
-	img {
-  		width: 100%;
-  		height: auto; }*/
 
 
 /* Most important right here ___________________________________________*/
@@ -184,7 +174,6 @@
 		display: inline-block;
 	}
 
-
 .caption{
  display: none;
  width: 80vw;
@@ -193,7 +182,6 @@
  padding-bottom: 20px; 
  padding-left: 42px; 
  margin-top: -25px;
-
 }
 
 .caption .largerpicture img{
@@ -205,10 +193,16 @@
 .caption p{
  padding-right: 25px;
  color: #f5fff9;
- font-size: calc(25px + 0.2vw);
+ font-size: calc(24px + 0.2vw);
  font-family: 'Haas', Helvetica, Arial, sans-serif;
  line-height: 30px;
 }
+
+.linked{
+ display: none;
+ padding-top: 20px; 
+}
+
 
 #tooltip{
   /*width: 200px;*/
@@ -272,7 +266,7 @@
 	}
 
 	#about a{
-		font-family: /*Times,sans-serif;*/ 'Haas', Helvetica, Arial, sans-serif;
+		font-family: 'Haas', Helvetica, Arial, sans-serif;
 		font-size: calc(17pt + 0.2vw);
 		line-height: 20px;
 	}
