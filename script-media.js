@@ -85,8 +85,8 @@
       else if (e.hasClass('bar34')) {
       return 'July 2020 / jwenzhuang.github.io / Wen’s website';
       }
-      else if (e.hasClass('bar311')) {
-      return 'July 2020 / drawn';
+      else if (e.hasClass('bar35')) {
+      return 'November 2019 / Sound.';
       }
   	
 	
