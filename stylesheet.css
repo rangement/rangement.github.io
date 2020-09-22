@@ -1,6 +1,6 @@
 @font-face {
 font-family: Haas;
-src: url(data/NHaasGroteskDSPro-55Rg.ttf);
+src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 }
 
 *, *:before, *:after {
@@ -61,6 +61,7 @@ src: url(data/NHaasGroteskDSPro-55Rg.ttf);
 		float: right;
 		position: absolute;
 		text-transform: capitalize;
+		z-index:1000;
 	}
 
 	header #lang-2 {
@@ -69,6 +70,7 @@ src: url(data/NHaasGroteskDSPro-55Rg.ttf);
 		position: absolute;
 		display: none;
 		text-transform: capitalize;
+		z-index:1000;
 	}
 
 	.about.active{
@@ -104,7 +106,7 @@ src: url(data/NHaasGroteskDSPro-55Rg.ttf);
 		position: fixed;
 		width: 101vw;
 		background-color: #dbd5c5;
-		padding-bottom: 0.75em;
+		padding-bottom: 0.95em;
 		padding-left: 0.45em;
 		z-index: 100;	
 
