@@ -1,4 +1,4 @@
-// SCRIPT PLACED AT BOTTOM OF HTML INSIDE BODY. 
+// SCRIPT PLACED AT BOTTOM OF HTML INSIDE BODY.
 
 
   // When the user scrolls down 100px from the top of the document, switch the button:
@@ -36,6 +36,11 @@
   window.onscroll = function() {scrollFunction()};
 
 
+//DESKTOP SCRIPT ONLY ____________________________________________________________
+
+  if (screen.width >= 470) {   // MEDIA SIZE DESKTOP
+  // Signals that this is script for Desktop media size:
+
   // Slidetoggle About menu:
   $(document).ready(function(){
     $(".about").click(function(){
@@ -53,31 +58,28 @@
     });
   });
 
-
-
-
-
-
-//MOBILE SCRIPT ONLY ____________________________________________________________
-
-
-
-if (screen.width <= 470) {   // MEDIA SIZE MOBILE
-
-
-    $(window).load(function() {
-    $('footer #para1').css('display','none'); 
-    $('.item-image').css('display','block');
-    });
-
-    window.onscroll = function() {scrollFunction()};
-
-    
- 
-
-
-  // Signals that this is script for Mobile media size:
-  console.log("MOBILE");
+$(".mobileabout" ).css('display','none');
 
 }
 
+//MOBILE SCRIPT ONLY ____________________________________________________________
+
+if (screen.width < 470) {   // MEDIA SIZE MOBILE
+// Signals that this is script for Mobile media size:
+console.log("MOBILE");
+
+    $(window).load(function() {
+    $('footer #para1').css('display','none');
+    $('footer').css('display','none');
+    $('.item-image').css('display','block');
+    });
+
+    const mobileabout = document.createElement('div');
+    mobileabout.innerHTML = `<div id="mobileabout"><a>say hi to me via<br><u>theia.flynn@gmail.com</u> / </a><a href="https://www.are.na/theia"><u> are.na</u><br>✣</a>.</div>`;
+    document.body.appendChild(mobileabout);
+    $(mobileabout).addClass("mobileabout");
+
+
+    window.onscroll = function() {scrollFunction()};
+
+}

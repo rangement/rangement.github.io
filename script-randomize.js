@@ -1,4 +1,4 @@
-if (screen.width >= 470) { 
+if (screen.width >= 470) {
 
 
     //attributes each "hover" element inside the container div its own margins
@@ -8,10 +8,9 @@ if (screen.width >= 470) {
     });
 	}
 
-
     //randomizes margins of each hover "object"
 	function randomizeObject(elem){
-    
+
         w = $(".container").width();
         w2 = w/1.5;
         w3 = w/6;
@@ -22,7 +21,7 @@ if (screen.width >= 470) {
 
 
         if (randomnumber >= maxmargin) {
-        $(elem).css({"margin-left": minmargin+"px"});   
+        $(elem).css({"margin-left": minmargin+"px"});
         }
 
         else {
@@ -32,6 +31,4 @@ if (screen.width >= 470) {
 	}
 }
 
-
-//note: not for mobile!
-
+//but not for mobile!

@@ -6,7 +6,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 *, *:before, *:after {
   	-moz-box-sizing: border-box;
   	-webkit-box-sizing: border-box;
-  	box-sizing: border-box; 
+  	box-sizing: border-box;
   	-webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
@@ -16,7 +16,6 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
     supported by Chrome and Opera */
   	}
 
-
 	html {
   		margin: 0;
   		background-color: #dbd5c5;
@@ -24,11 +23,11 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
   		text-decoration: none;
   	}
 
-    html a {
-  		color: #f5fff9;
+  html a {
+  	color: #f5fff9;
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
 		text-decoration: none;
-		font-size: calc(24px + 0.2vw);
+		font-size: calc(21px + 0.2vw);
 	}
 
 	a, a:link, a:visted, a:active {
@@ -73,6 +72,27 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 		z-index:1000;
 	}
 
+  	#lang #arrow, #lang-2 #arrow{
+  		height:21pt;
+  		width:21pt;
+  	}
+
+    /* top arrow */
+    #lang-2 #arrow{
+      padding-right: 2px;
+      padding-top: 11px
+    }
+
+    /* bottom arrow */
+    #lang #arrow{
+      padding-right: 5px;
+      padding-top: 12px
+    }
+
+  .about{
+		margin: 0px;
+	}
+
 	.about.active{
 		opacity: 0;
 	}
@@ -81,7 +101,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 		background-color: #dbd5c5;
 		display: none;
 		height: 100vh;
-		width: 102vw;
+		width: 103vw;
 		margin-left: -15px;
 		top: 0px;
 		left: 0px;
@@ -90,10 +110,9 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 		padding-right: calc(4vw + 0.2vw);
 	}
 
-
 	#about a{
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
-		font-size: calc(24px + 0.2vw);
+		font-size: calc(21px + 0.2vw);
 		line-height: 32px;
 	}
 
@@ -101,23 +120,25 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 		text-decoration: none;
 	}
 
-
 	footer{
+    background-color:#dbd5c5;
 		position: fixed;
-		width: 101vw;
-		background-color: #dbd5c5;
-		padding-bottom: 0.95em;
-		padding-left: 0.45em;
-		z-index: 100;	
-
+		width: 102vw;
+    left:0;
+		padding-top:0.80em;
+    padding-bottom: 0.80em;
+		z-index: 100;
 	}
+
+  footer .hoverline{
+    top: 0;
+  }
 
 	footer, footer a, #para1 a{
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
 		bottom: 0em;
 		padding-left: 0.45em;
 	}
-
 
 	footer #contact {
 		right:1.25em;
@@ -128,24 +149,21 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 		cursor: pointer;
 	}
 
+  /* Most important right here - Most important right here */
 
-/* Most important right here ___________________________________________*/
-
-	main {		
+	main {
 		min-height: 100%;
 		width: 100vw;
 		margin: 10px;
-		padding-top:45px;
-	}	
-
+		padding-top:38px;
+	}
 
 	body{
 		margin-left: 0;
 	}
 
 	.container{
-/*		padding-top:50px;*/
-		padding-bottom:50px;
+		padding-bottom:41px;
 		font-size: 0;
 		background-color: #dbd5c5;
 		width: 95vw;
@@ -166,13 +184,13 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
  		position: absolute;
  		left:-1px;
  		display: inline-block;
-	    border-bottom: solid 1.5pt #f5fff9;
+	  border-bottom: solid 1.5pt #f5fff9;
 	}
 
 	img{
 		height:180px;
 		width:auto;
-		z-index: 0;	
+		z-index: 0;
 		display: inline-block;
 	}
 
@@ -181,8 +199,8 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
  width: 80vw;
  height: auto;
  text-align: left;
- padding-bottom: 20px; 
- padding-left: 42px; 
+ padding-bottom: 20px;
+ padding-left: 42px;
  margin-top: -25px;
 }
 
@@ -195,7 +213,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 .caption p{
  padding-right: 25px;
  color: #f5fff9;
- font-size: calc(24px + 0.2vw);
+ font-size: calc(21px + 0.2vw);
  font-family: 'Haas', Helvetica, Arial, sans-serif;
  line-height: 30px;
 }
@@ -212,23 +230,49 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
   font-family: 'Haas', Helvetica, Arial, sans-serif;
 }
 
+  .mobiletext, .mobiletext a, .mobiletext u{
+    display: none;
+  }
 
+
+                /* Mobile size: ___________________________________________*/
 /* Mobile size: ___________________________________________*/
 
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 469px) {
 
 	#tooltip{
 		display: none;
 	}
 
+  html{
+    margin:0;
+    background-color: #fafffc;
+  }
+
+  main{
+    margin:0;
+  }
+
 	.hoverline{
-		display: none;
+    width:100%;
+		height: auto;
+ 		position: absolute;
+ 		left:0;
+ 		display: inline-block;
+	  border-bottom: solid 1.5pt #dbd5c5;
 	}
 
+  img{
+    width:100%;
+    height:auto;
+    z-index: 0;
+    display: inline-block;
+    margin:0;
+  }
 
 	html a {
-  		color: #f5fff9;
+  	color: #dbd5c5;
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
 		text-decoration: none;
 		font-size: calc(17pt + 0.2vw);
@@ -240,58 +284,101 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 		left: 0px;
 		padding-bottom: calc(0.25em + 0.2vw);
 	}
-	
 
 	.container{
-		background-color: #dbd5c5;
+    width:100%;
+		background-color: #fafffc;
 		margin-top: calc(5.75em + 0.2vw);
 		margin-bottom: calc(0.85em + 0.2vw);
 	}
 
-	#about {
-		display: none;
-		background-color: none;
-		height: 100vh;
-		width: 99vw;
-		margin: 0;
-		top: 0px;
-		left: 0px;
-		z-index: 9999;
-		padding-top: calc(0.25em + 0.2vw);
-		padding-right: calc(2em + 0.2vw);
-	}
-
-	#about a{
+  .mobiletext{
+    width:100%;
+    height:auto;
+    padding: 12px 12px 14px 12px;
+    z-index: 0;
+    display: inline-block;
+    margin:0;
+    color: #dbd5c5;
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
-		font-size: calc(17pt + 0.2vw);
-		line-height: 20px;
+		text-decoration: none;
+		font-size: 15pt;
+		z-index: 99999;
+  }
+
+  .mobiletext a, .mobiletext u{
+    display: inline-block;
+    font-family: 'Haas', Helvetica, Arial, sans-serif;
+    font-size: 15pt;
+    z-index: 99999;
+  }
+
+  .about{
+		margin: 0px;
 	}
 
+  .about a{
+    width: 10px;
+		margin: 0;
+	}
+
+  .about.active{
+		opacity: 0;
+	}
 
 	header #lang, header #lang-2 {
 		padding-top: calc(0.15em + 0.2vw);
 		right: calc(0.75em + 0.2vw);
 	}
 
+  header #lang .cls-1, header #lang-2 .cls-1{
+    fill:#dbd5c5;
+  }
 
 	#lang #arrow, #lang-2 #arrow{
 		height:21pt;
 		width:21pt;
 	}
 
-	header .about{
-		display: block;
-	}
+  header .more{
+  	display: inline-flex;
+  }
 
-	.about.active{
-		opacity: 100;
-	}
+  header .more.active{
+    display: block;
+  }
 
 
-	footer{
-		padding-bottom: calc(0.25em + 0.2vw);	
-	}
+  .mobileabout{
+    background-color: #fafffc;
+    width: 102vw;
+    height: auto;
+    bottom: 0;
+    font-family: 'Haas', Helvetica, Arial, sans-serif;
+    font-size: calc(21px + 0.2vw);
+    line-height: 32px;
+    display: inline;
+    z-index: 9999999;
+    color:#dbd5c5;
+  }
+
+  #mobileabout {
+    border-top: solid 1.5pt #dbd5c5;
+    background-color: #fafffc;
+    width: 102vw;
+    height: auto;
+    text-align: center;
+    padding:10px
+  }
+  #mobileabout a, #mobileabout u{
+    font-family: 'Haas', Helvetica, Arial, sans-serif;
+    font-size: calc(21px + 0.2vw);
+    line-height: 32px;
+    display: inline;
+    z-index: 9999999;
+    text-decoration: none;
+    color: #dbd5c5;
+  }
 
 
 }
-
