@@ -75,7 +75,7 @@ console.log("MOBILE");
     });
 
     const mobileabout = document.createElement('div');
-    mobileabout.innerHTML = `<div id="mobileabout"><a>say hi to me via<br><u>theia.flynn@gmail.com</u> / </a><a href="https://www.are.na/theia"><u> are.na</u><br>✣</a>.</div>`;
+    mobileabout.innerHTML = `<div id="mobileabout"><a>say hi to me via</a><br><a href="mailto:theia.flynn@gmail.com">theia.flynn@gmail.com</a> / <a href="https://www.are.na/theia"> are.na</a><br>✣</div>`;
     document.body.appendChild(mobileabout);
     $(mobileabout).addClass("mobileabout");
 
