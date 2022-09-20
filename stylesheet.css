@@ -18,20 +18,20 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 
 	html {
   		margin: 0;
-  		background-color: #dbd5c5;
+  		background-color: white;
   		overflow-x: hidden;
   		text-decoration: none;
   	}
 
   html a {
-  	color: #f5fff9;
+  	color: #dbd5c5;
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
 		text-decoration: none;
-		font-size: calc(21px + 0.2vw);
+		font-size: calc(19px + 0.2vw);
 	}
 
 	a, a:link, a:visted, a:active {
-		color: 	black;
+		color: 	#dbd5c5;
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
 		text-decoration: none;
 	}
@@ -98,7 +98,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 	}
 
 	#about {
-		background-color: #dbd5c5;
+		background-color: white;
 		display: none;
 		height: 100vh;
 		width: 103vw;
@@ -112,7 +112,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 
 	#about a{
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
-		font-size: calc(21px + 0.2vw);
+		font-size: calc(19px + 0.2vw);
 		line-height: 32px;
 	}
 
@@ -121,7 +121,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 	}
 
 	footer{
-    background-color:#dbd5c5;
+    background-color:white;
 		position: fixed;
 		width: 100vw;
     left:0;
@@ -165,7 +165,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 	.container{
 		padding-bottom:41px;
 		font-size: 0;
-		background-color: #dbd5c5;
+		background-color: white;
 		width: 95vw;
 		margin-left: calc(7.75em + 0.2vw);
 		margin-right: 2.5%;
@@ -184,7 +184,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
  		position: absolute;
  		left:0px;
  		display: inline-block;
-	  border-bottom: solid 1.5pt #f5fff9;
+	  border-bottom: solid 1.25pt #dbd5c5;
 	}
 
 	img{
@@ -212,8 +212,8 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 
 .caption p{
  padding-right: 25px;
- color: #f5fff9;
- font-size: calc(21px + 0.2vw);
+ color: #dbd5c5;
+ font-size: calc(19px + 0.2vw);
  font-family: 'Haas', Helvetica, Arial, sans-serif;
  line-height: 30px;
 }
@@ -224,9 +224,10 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
   position: absolute;
   display:none;
   background-color: #f5fff9;
+  padding: 1px;
   text-align: center;
   color: black;
-  font-size: calc(18px + 0.2vw);
+  font-size: calc(17px + 0.2vw);
   font-family: 'Haas', Helvetica, Arial, sans-serif;
 }
 
@@ -260,7 +261,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
  		position: absolute;
  		left:0;
  		display: inline-block;
-	  border-bottom: solid 1.5pt #dbd5c5;
+	  border-bottom: solid 1.25pt #dbd5c5;
 	}
 
   img{
@@ -272,7 +273,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
   }
 
 	html a {
-  	color: #dbd5c5;
+  	color: #fafffc;
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
 		text-decoration: none;
 		font-size: calc(17pt + 0.2vw);
@@ -299,7 +300,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
     z-index: 0;
     display: inline-block;
     margin:0;
-    color: #dbd5c5;
+    color: #fafffc;
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
 		text-decoration: none;
 		font-size: 15pt;
@@ -332,7 +333,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 	}
 
   header #lang .cls-1, header #lang-2 .cls-1{
-    fill:#dbd5c5;
+    fill:#fafffc;
   }
 
 	#lang #arrow, #lang-2 #arrow{
@@ -355,15 +356,15 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
     height: auto;
     bottom: 0;
     font-family: 'Haas', Helvetica, Arial, sans-serif;
-    font-size: calc(21px + 0.2vw);
+    font-size: calc(19px + 0.2vw);
     line-height: 32px;
     display: inline;
     z-index: 9999999;
-    color:#dbd5c5;
+    color:#fafffc;
   }
 
   #mobileabout {
-    border-top: solid 1.5pt #dbd5c5;
+    border-top: solid 1.25pt #fafffc;
     background-color: #fafffc;
     padding: 50px 12px 12px 12px;
     width: 100vw;
@@ -371,14 +372,15 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
     text-align: center;
     padding:10px
   }
+
   #mobileabout a, #mobileabout u{
     font-family: 'Haas', Helvetica, Arial, sans-serif;
-    font-size: calc(21px + 0.2vw);
+    font-size: calc(19px + 0.2vw);
     line-height: 32px;
     display: inline;
     z-index: 9999999;
     text-decoration: none;
-    color: #dbd5c5;
+    color: #fafffc;
   }
 
 

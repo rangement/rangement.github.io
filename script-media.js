@@ -73,7 +73,7 @@
   		return 'Collaboration with Aedan Vadala Clark / Back/Forth'; //April 2017
   		}
   		else if (e.hasClass('bar32')) {
-  		return 'Typeface Specimen - Book / Incline'; //December 2018
+  		return 'Typeface Specimen / Incline'; //December 2018
   		}
   		else if (e.hasClass('bar28')) {
   		return 'Typeface Specimen / Rhyta Grotesk'; //May 2019
@@ -97,4 +97,5 @@
 	// Signals that this is script for Mobile media size:
 	console.log("MOBILE");
 	$("caption").hide();
+	$("hoverline").hide();
 }
