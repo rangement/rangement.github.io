@@ -256,12 +256,13 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
   }
 
 	.hoverline{
-    width:100%;
+    display:none;
+    /* width:100%;
 		height: auto;
  		position: absolute;
  		left:0;
  		display: inline-block;
-	  border-bottom: solid 1.25pt #dbd5c5;
+	  border-bottom: solid 1.25pt #dbd5c5; */
 	}
 
   img{
@@ -273,7 +274,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
   }
 
 	html a {
-  	color: #fafffc;
+  	color: #dbd5c5;
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
 		text-decoration: none;
 		font-size: calc(17pt + 0.2vw);
@@ -300,7 +301,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
     z-index: 0;
     display: inline-block;
     margin:0;
-    color: #fafffc;
+    color: #dbd5c5;
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
 		text-decoration: none;
 		font-size: 15pt;
@@ -333,7 +334,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 	}
 
   header #lang .cls-1, header #lang-2 .cls-1{
-    fill:#fafffc;
+    fill:#dbd5c5;
   }
 
 	#lang #arrow, #lang-2 #arrow{
@@ -360,11 +361,11 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
     line-height: 32px;
     display: inline;
     z-index: 9999999;
-    color:#fafffc;
+    color: #dbd5c5;
   }
 
   #mobileabout {
-    border-top: solid 1.25pt #fafffc;
+    border-top: solid 1.25pt #dbd5c5;
     background-color: #fafffc;
     padding: 50px 12px 12px 12px;
     width: 100vw;
@@ -380,7 +381,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
     display: inline;
     z-index: 9999999;
     text-decoration: none;
-    color: #fafffc;
+    color: #dbd5c5;
   }
 
 
