@@ -52,7 +52,7 @@
   		return 'Modular Cursive Stencil'; //September 2017
   		}
   		else if (e.hasClass('bar7')) {
-  		return 'Found photo anthology / Flashback'; //March 2019
+  		return 'Thesis Project / A website'; //May 2019
   		}
   		else if (e.hasClass('bar9')) {
   		return 'Janky Mess Poster'; //May 2019
@@ -79,13 +79,13 @@
   		return 'Typeface Specimen / Rhyta Grotesk'; //May 2019
   		}
   		else if (e.hasClass('bar33')) {
-  		return 'Thesis Project / A website'; //May 2019
+			return 'Found photo anthology / Flashback'; //March 2019
   		}
       else if (e.hasClass('bar34')) {
       return 'jwenzhuang.github.io / Wen’s website'; //July 2020
       }
       else if (e.hasClass('bar35')) {
-      return 'Sound poster.'; //November 2019
+      return 'Sound Poster'; //November 2019
       }
 
 	}
