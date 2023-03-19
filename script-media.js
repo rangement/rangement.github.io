@@ -58,7 +58,7 @@
   		return 'Janky Mess Poster'; //May 2019
   		}
   		else if (e.hasClass('bar30')) {
-  		return 'Degree Project / Final Installation'; //May 2019
+  		return 'Premonition drawing'; //May 2019
   		}
   		else if (e.hasClass('bar10')) {
   		return 'Le Parc des Perroquets'; //May 2019
@@ -78,6 +78,9 @@
   		else if (e.hasClass('bar28')) {
   		return 'Typeface Specimen / Rhyta Grotesk'; //May 2019
   		}
+			else if (e.hasClass('bar29')) {
+			return 'Poster with Maria Gerdyman / Attleboro, MA'; //May 2019
+			}
   		else if (e.hasClass('bar33')) {
 			return 'Found photo anthology / Flashback'; //March 2019
   		}

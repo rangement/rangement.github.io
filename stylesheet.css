@@ -24,6 +24,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
   	}
 
   html a {
+    /* #dbd5c5 */
   	color: #dbd5c5;
 		font-family: 'Haas', Helvetica, Arial, sans-serif;
 		text-decoration: none;
@@ -184,24 +185,39 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
  		position: absolute;
  		left:0px;
  		display: inline-block;
-	  border-bottom: solid 1.25pt #dbd5c5;
+	  /* border-bottom: solid 20px #dbd5c5; */
 	}
 
 	img{
-		height:180px;
+		height:220px;
 		width:auto;
 		z-index: 0;
 		display: inline-block;
+    padding-bottom: 20px;
 	}
+
+  .number{
+    font-family: 'Haas', Helvetica, Arial, sans-serif;
+    bottom: 0em;
+    padding-left: 0.7em;
+    padding-right: 0.8em;
+    padding-bottom: 20px;
+    color: #dbd5c5;
+    font-family: 'Haas', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-size: calc(14px + 0.2vw);
+    display: inline-block;
+  }
+
 
 .caption{
  display: none;
- width: 80vw;
+ width: 65vw;
  height: auto;
  text-align: left;
  padding-bottom: 20px;
  padding-left: 42px;
- margin-top: -25px;
+ margin-top: -10px;
 }
 
 .caption .largerpicture img{
@@ -223,7 +239,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
   z-index: 10000;
   position: absolute;
   display:none;
-  background-color: #f5fff9;
+  background-color: #C2C5BE;
   padding: 1px;
   text-align: center;
   color: black;
@@ -234,7 +250,6 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
   .mobiletext, .mobiletext a, .mobiletext u{
     display: none;
   }
-
 
                 /* Mobile size: ___________________________________________*/
 /* Mobile size: ___________________________________________*/
@@ -265,12 +280,17 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 	  border-bottom: solid 1.25pt #dbd5c5; */
 	}
 
+  .number{
+    display:none;
+  }
+
   img{
     width:100%;
     height:auto;
     z-index: 0;
     display: inline-block;
     margin:0;
+    padding:0;
   }
 
 	html a {
@@ -383,6 +403,12 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
     text-decoration: none;
     color: #dbd5c5;
   }
-
-
 }
+
+/* color index
+beige = #dbd5c5
+darker beige = D2BF9C
+dark grey = #5B6462
+grey = #C2C5BE
+pink = #E16085
+light blue = #fafffc*/
