@@ -17,7 +17,8 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
   	}
 
 	html {
-  		margin: 0;
+  		cursor: crosshair;
+      margin: 0;
   		background-color: white;
   		overflow-x: hidden;
   		text-decoration: none;
@@ -50,6 +51,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 	header .more{
 		padding-top: 0.5em;
 		position: relative;
+    cursor: pointer;
 	}
 
 	header .more .name{
@@ -62,6 +64,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 		position: absolute;
 		text-transform: capitalize;
 		z-index:1000;
+    cursor: pointer;
 	}
 
 	header #lang-2 {
@@ -71,6 +74,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 		display: none;
 		text-transform: capitalize;
 		z-index:1000;
+    cursor: pointer;
 	}
 
   	#lang #arrow, #lang-2 #arrow{
@@ -99,6 +103,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 	}
 
 	#about {
+    cursor: pointer;
 		background-color: white;
 		display: none;
 		height: 100vh;
@@ -189,7 +194,8 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 	}
 
 	img{
-		height:220px;
+		cursor: pointer;
+    height:220px;
 		width:auto;
 		z-index: 0;
 		display: inline-block;
