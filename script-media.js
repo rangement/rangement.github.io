@@ -40,7 +40,7 @@
     	return 'Typeface Specimen - Poster / Incline'; //dec 2018
   		}
   		else if (e.hasClass('bar3')) {
-  		return 'A photo project'; //March 2019
+  		return 'Photo project'; //March 2019
   		}
   		else if (e.hasClass('bar4')) {
   		return 'GUI Poster'; //April 2019
@@ -52,7 +52,7 @@
   		return 'Modular Cursive Stencil'; //September 2017
   		}
   		else if (e.hasClass('bar7')) {
-  		return 'Thesis Project / A website'; //May 2019
+  		return 'Thesis Project / Browser-based game'; //May 2019
   		}
   		else if (e.hasClass('bar9')) {
   		return 'Janky Mess Poster'; //May 2019
@@ -67,10 +67,7 @@
   		return 'Collaboration with Tiger Dingsun / Argentina - Hi/Low Tech'; //May 2017
   		}
   		else if (e.hasClass('bar12')) {
-  		return 'Browser window game'; //May 2018
-  		}
-  		else if (e.hasClass('bar13')) {
-  		return 'Collaboration with Aedan Vadala Clark / Back/Forth'; //April 2017
+  		return 'Browser-based window game'; //May 2018
   		}
   		else if (e.hasClass('bar32')) {
   		return 'Typeface Specimen / Incline'; //December 2018
@@ -90,6 +87,9 @@
       else if (e.hasClass('bar35')) {
       return 'Sound Poster'; //November 2019
       }
+			else if (e.hasClass('bar36')) {
+			return 'Thesis Project / Code-generated poster'; //March 2019
+			}
 
 	}
 
