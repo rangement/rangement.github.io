@@ -1,11 +1,11 @@
     // Array of images and corresponding legends
     const imagebase = [
-        { src: 'assets/imgs-newsite/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'Ceasefire Now' },
-        { src: 'assets/imgs-newsite/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'End the Occupation' },
-        { src: 'assets/imgs-newsite/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'End the Apartheid' },
-        { src: 'assets/imgs-newsite/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'From the river' },
-        { src: 'assets/imgs-newsite/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'To the sea' },
-        { src: 'assets/imgs-newsite/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'Palestine will be free' }
+        { src: 'assets/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'Ceasefire Now' },
+        { src: 'assets/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'End the Occupation' },
+        { src: 'assets/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'End the Apartheid' },
+        { src: 'assets/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'From the river' },
+        { src: 'assets/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'To the sea' },
+        { src: 'assets/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'Palestine will be free' }
     ];
 
 
