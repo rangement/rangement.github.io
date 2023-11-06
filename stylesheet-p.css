@@ -116,13 +116,6 @@ footer {
       text-transform: uppercase;
   }
 
-  /* footer {
-      display: none;
-  }
-  #contact {
-      display: none;
-  } */
-
   #caption {
       position: fixed;
       z-index: 2;
@@ -133,6 +126,70 @@ footer {
       text-align: center;
       color: black;
       font-size: 4.25em;
+      inline-size: 96.5%;
+      line-height: 0.9em;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: 'Typeface', Helvetica, Arial, sans-serif;
+  }
+
+  #gallery {
+      position: fixed; /* or position: absolute; */
+      top: 0px;
+      bottom: 0;
+      left: 0px;
+      right: 0;
+      margin: auto;
+      width: auto;
+      height: 25vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+
+}
+
+/* Mobile size: ___________________________________________*/
+
+@media screen and (max-width: 490px) {
+
+  header {
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+      color: black;
+      font-size: 3.25em;
+      inline-size: 96.5%;
+      font-family: 'Typeface', Helvetica, Arial, sans-serif;
+      top: 0.15em;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 0.9em;
+      text-transform: uppercase;
+  }
+
+  footer {
+      display: none;
+  }
+  #contact {
+      display: none;
+  }
+
+  #caption {
+      position: fixed;
+      z-index: 2;
+      bottom: 0;
+      padding-bottom: 6px;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      color: black;
+      font-size: 3.25em;
       inline-size: 96.5%;
       line-height: 0.9em;
       text-transform: uppercase;
