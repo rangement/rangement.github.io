@@ -116,12 +116,12 @@ footer {
       text-transform: uppercase;
   }
 
-  footer {
+  /* footer {
       display: none;
   }
   #contact {
       display: none;
-  }
+  } */
 
   #caption {
       position: fixed;
@@ -157,4 +157,5 @@ footer {
       background-repeat: no-repeat;
       background-position: center center;
   }
+
 }
