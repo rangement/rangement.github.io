@@ -127,7 +127,7 @@ src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
 	}
 
 	footer{
-    background-color:white;
+    background-color:none;
 		position: fixed;
 		width: 100vw;
     left:0;

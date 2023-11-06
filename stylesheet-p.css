@@ -1,0 +1,162 @@
+/* CSS for header */
+@font-face {
+font-family: Typeface;
+src: url(assets/NHaasGroteskDSPro-55Rg.ttf);
+}
+
+html {
+    background-color: white;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    width: auto;
+    color: black;
+    font-size: 38pt;
+    font-family: 'Typeface', Helvetica, Arial, sans-serif;
+    top: 0;
+    padding-left: 1px;
+}
+
+footer {
+    position: fixed;
+    z-index: 999;
+    width: auto;
+    color: black;
+    font-size: 38pt;
+    font-family: 'Typeface', Helvetica, Arial, sans-serif;
+    bottom: 0;
+    padding-left: 5px;
+    padding-bottom: 6px;
+}
+
+#contact {
+    position: fixed;
+    width: auto;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    padding-right: 10px;
+    color: black;
+    font-size: 38pt;
+    font-family: 'Typeface', Helvetica, Arial, sans-serif;
+}
+
+/* CSS for gallery and caption */
+#gallery {
+    position: fixed; /* or position: absolute; */
+    top: -30px;
+    bottom: 0;
+    left: -30px;
+    right: 0;
+    margin: auto;
+    width: auto;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#caption {
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    width: auto;
+    height: auto;
+    text-align: right;
+    color: black;
+    font-size: 38pt;
+    font-family: 'Typeface', Helvetica, Arial, sans-serif;
+}
+
+#msg {
+    position: fixed; /* or position: absolute; */
+    top: -30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    color: black;
+    font-size: 100pt;
+    font-family: 'Typeface', Helvetica, Arial, sans-serif;
+}
+
+/* Mobile size: ___________________________________________*/
+/* Mobile size: ___________________________________________*/
+
+
+@media screen and (max-width: 740px) {
+
+  header {
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+      color: black;
+      font-size: 4.5em;
+      inline-size: 96.5%;
+      font-family: 'Typeface', Helvetica, Arial, sans-serif;
+      top: 0.15em;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 0.9em;
+      text-transform: uppercase;
+  }
+
+  footer {
+      display: none;
+  }
+  #contact {
+      display: none;
+  }
+
+  #caption {
+      position: fixed;
+      z-index: 2;
+      bottom: 0;
+      padding-bottom: 6px;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      color: black;
+      font-size: 4.5em;
+      inline-size: 96.5%;
+      line-height: 0.9em;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: 'Typeface', Helvetica, Arial, sans-serif;
+  }
+
+  #gallery {
+      position: fixed; /* or position: absolute; */
+      top: 0px;
+      bottom: 0;
+      left: 0px;
+      right: 0;
+      margin: auto;
+      width: auto;
+      height: 25vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+}
