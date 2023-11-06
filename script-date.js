@@ -15,6 +15,6 @@ function formatTime() {
     let d = new Date(),
         minutes = d.getMinutes().toString().length == 1 ? '0' + d.getMinutes() : d.getMinutes(),
         hours = d.getHours().toString().length == 1 ? '0' + d.getHours() : d.getHours(),
-        ampm = d.getHours() >= 12 ? 'pm' : 'am';
-    return hours + ':' + minutes + ampm;
+        // ampm = d.getHours() >= 12 ? 'pm' : 'am';
+    return hours + ':' + minutes;
 }
