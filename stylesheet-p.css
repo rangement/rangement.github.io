@@ -105,7 +105,7 @@ footer {
       z-index: 999;
       width: 100%;
       color: black;
-      font-size: 4.5em;
+      font-size: 4.25em;
       inline-size: 96.5%;
       font-family: 'Typeface', Helvetica, Arial, sans-serif;
       top: 0.15em;
@@ -132,7 +132,7 @@ footer {
       height: auto;
       text-align: center;
       color: black;
-      font-size: 4.5em;
+      font-size: 4.25em;
       inline-size: 96.5%;
       line-height: 0.9em;
       text-transform: uppercase;
