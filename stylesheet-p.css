@@ -100,6 +100,13 @@ footer {
 
 @media screen and (max-width: 740px) {
 
+  footer {
+      display: none;
+  }
+  #contact {
+      display: none;
+  }
+
   header {
       position: fixed;
       z-index: 999;
