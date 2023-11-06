@@ -43,7 +43,7 @@
     gallery.addEventListener('click', nextImage);
 
     // Automatically cycling through images every 10 seconds
-    setInterval(nextImage, 8000);
+    setInterval(nextImage, 4000);
 
     // Initialize page with a random image from array at each load
     displayImage(currentIndex);
