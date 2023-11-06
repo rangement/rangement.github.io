@@ -1,13 +1,12 @@
     // Array of images and corresponding legends
     const imagebase = [
-        { src: 'assets/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'Ceasefire Now' },
-        { src: 'assets/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'End the Occupation' },
-        { src: 'assets/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'End the Apartheid' },
-        { src: 'assets/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'From the river' },
-        { src: 'assets/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'To the sea' },
+        { src: 'assets/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE!.png', legend: 'Ceasefire Now' },
+        { src: 'assets/PLO-1989.jpg', legend: 'End the Occupation' },
+        { src: 'assets/Samidoun-2016.jpg', legend: 'End the Apartheid' },
+        { src: 'assets/Palestine-stamps-1982.png', legend: 'From the river' },
+        { src: 'assets/PLO-1989-2.jpg', legend: 'To the sea' },
         { src: 'assets/FROMTHERIVERTOTHESEAPALESTINEWILLBEFREE.png', legend: 'Palestine will be free' }
     ];
-
 
     //Preloading:
     // Array of image URLs from the imagebase array
@@ -44,7 +43,7 @@
     gallery.addEventListener('click', nextImage);
 
     // Automatically cycling through images every 10 seconds
-    setInterval(nextImage, 10000);
+    setInterval(nextImage, 8000);
 
     // Initialize page with a random image from array at each load
     displayImage(currentIndex);
